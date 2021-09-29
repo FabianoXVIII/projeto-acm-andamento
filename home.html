@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM Rio - Ilha do Governador</title>
     <link href='estilos.css' rel='stylesheet'>
-    <script src='script.js' defer></script>
+    <script src='./js/script.js' defer></script>
 </head>
 
 <header>
@@ -18,10 +18,12 @@
         </div>
 
         <ul>
-            <li><a href='#'>Página Inicial</a></li>
-            <li><a href='#'>Planos</a></li>
-            <li><a href='#'>Horários</a></li>
-            <li><a href='#'>Jovem Aprendiz - Informações</a></li>
+            <li><a href='./index.html'
+                    onclick="var t=this; setTimeout(function(){t.href='#paginaInicial'},10)">Página Inicial</a>
+            </li>
+            <li><a href='#planos'>Planos</a></li>
+            <li><a href='#horarios'>Horários</a></li>
+            <li><a href='https://www.acmrio.org.br/blank'>Jovem Aprendiz - Informações</a></li>
         </ul>
     </div>
 </header>
