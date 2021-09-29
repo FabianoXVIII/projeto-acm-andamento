@@ -13,7 +13,7 @@ function scrollToIdOnClick(event) {
     const to = document.querySelector(id).offsetTop;  // pega a quantidade de px do topo até o id
 
     window.scroll({
-        top: to - 80,
+        top: to - 100,
         behavior: "smooth", // suave
 
     })

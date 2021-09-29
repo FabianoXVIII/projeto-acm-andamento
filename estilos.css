@@ -40,6 +40,20 @@ body {
     position: fixed;
 }
 
+.menuHome {
+    background-color:#232363;
+    justify-content: left;
+    padding-left: 23px;
+    align-items: center;
+    height: 95px;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+}
+
 .blocoMenuLogo {
     display: flex;
     height: 100%;
@@ -258,7 +272,7 @@ body {
 }
 
 .conteudoHome {
-    margin-top: 140px;
+    height: 100%;
     margin-left: 550px;
     display: flex;
     align-items: center;
@@ -268,9 +282,10 @@ body {
 
 .blocoHome {
     border-radius: 30px;
+    margin-top: 60px;
     padding: 0px 30px;
     box-shadow: 2px 2px 6px black;
-    height: 160px;
+    height: 180px;
     width: 370px;
     align-items: center;
     justify-content: center;
@@ -279,6 +294,7 @@ body {
 }
 
 .botaoHome {
+    margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
     align-items: center;
@@ -299,9 +315,16 @@ body {
     color: #232363;
 }
 
-.tituloHome {
+.textoHome {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+}
+
+.tituloHome { 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #f0eaea;
 }
