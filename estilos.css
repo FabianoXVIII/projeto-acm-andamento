@@ -9,13 +9,15 @@ body {
     background-color: #e7e7e7;
     min-height: 100%;
     background-color: #e7e7e7;
-    background-image: url(./img/fundo.png);
+    background-image: url(./img/fundoIndex.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .bodyHome {
+    padding-top: 180px;
+    padding-bottom: 80px;
     margin: 0;
     display:flex;
     flex-direction: column;
@@ -42,7 +44,7 @@ body {
 
 .menuHome {
     background-color:#232363;
-    justify-content: left;
+    justify-content: space-between;
     padding-left: 23px;
     align-items: center;
     height: 95px;
@@ -53,6 +55,28 @@ body {
     display: flex;
     position: fixed;
 }
+
+.menuHome ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 550px;
+    }
+
+    .menuHome ul li {
+    display: flex;
+    margin: 35px 15px;
+    align-items: center;
+    display: inline-block;
+    list-style: none;
+    }
+
+    .menuHome ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 .blocoMenuLogo {
     display: flex;
@@ -80,6 +104,7 @@ body {
 }
 
 .menu ul {
+    display: flex;
     text-align: center;
     align-items: center;
 }
@@ -272,8 +297,9 @@ body {
 }
 
 .conteudoHome {
-    height: 100%;
-    margin-left: 550px;
+    animation-name: fade;
+    animation-duration: 2.5s;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +308,7 @@ body {
 
 .blocoHome {
     border-radius: 30px;
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 0px 30px;
     box-shadow: 2px 2px 6px black;
     height: 180px;
@@ -293,21 +319,34 @@ body {
     flex-direction: column;
 }
 
+@keyframes fade {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 .botaoHome {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
     align-items: center;
     justify-content: center;
     background: #232363;
     border: solid 2px transparent;
-    border-radius: 6px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
 }
 
 .botaoHome:hover  {
-    background-color: #ffffff;
-    transition: ease 0.6s;
-    border-radius: 8px;
+    background-color: #f0eaea;
+    transition: ease 0.8s;
+    border-radius: 20px;
+    color: #232363;
     border: solid 2px #232363;
 }
 
@@ -319,10 +358,11 @@ body {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: #f0eaea;
 }
 
 .tituloHome { 
+    margin-top: 20px;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
