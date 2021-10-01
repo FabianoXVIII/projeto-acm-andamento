@@ -201,6 +201,8 @@ body {
 
 .blocoTexto {
     border-radius: 10px;
+    animation-name: fade;
+    animation-duration: 1s;
     background-image: url(./img/blocoimg.png);
     padding: 0px 30px;
     box-shadow: 2px 2px 6px black;
@@ -213,6 +215,8 @@ body {
 }
 
 .blocoPlano {
+    animation-name: fade;
+    animation-duration: 1s;
     background-image: url(./img/blocoimg.png);
     border-radius: 10px;
     background-color: #ffffff;
