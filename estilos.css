@@ -4,6 +4,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     padding-top: 80px;
     background-color: #e7e7e7;
@@ -18,7 +19,7 @@ body {
 .bodyHome {
     padding-top: 180px;
     padding-bottom: 80px;
-    margin: 0;
+    margin: 0 auto;
     display:flex;
     flex-direction: column;
     min-height: 100%;
@@ -44,7 +45,7 @@ body {
 
 .menuHome {
     background-color:#232363;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 23px;
     align-items: center;
     height: 95px;
@@ -61,7 +62,9 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left: 550px;
+    gap: 10px;
+    margin-left: 700px;
+    width: max-content;
     }
 
     .menuHome ul li {
@@ -81,9 +84,8 @@ body {
 .blocoMenuLogo {
     display: flex;
     height: 100%;
-    display: flex;
+    width: auto;
     align-items: center;
-    margin-right: 200px;
 }
 
 .menuLogo {
